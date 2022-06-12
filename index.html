@@ -12,11 +12,11 @@
         margin 10px 10px 10px 10px;
     }
     
-    #radio { width:320px; }
-    #radio ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
-    #radio ol li { }
-    #radio ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
-    #radio ol li p em { display:block; }
+    #nrlist { width:320px; }
+    #nrlist ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
+    #nrlist ol li { }
+    #nrlist ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
+    #nrlist ol li p em { display:block; }
 </style>
 </head>
 <body>
@@ -26,12 +26,13 @@
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 
-    <ol id="radio">
-        <lh>Radio</lh>
-        <li><a href="https://sverigesradio.se/finska">Sveriges Radio Finska</a></li>
-        <li><a href="http://websdr.ewi.utwente.nl:8901">Wide-band WebSDR in Enschede (NL)</a><li>
-        <li><a href="https://www.radio-osterreich.at/oe1">Ö1 live</a></li>
-    </ol>
-
+    <div id="nrlist">
+        <ol id="radio">
+            <lh>Radio</lh>
+            <li><p><em><a href="https://sverigesradio.se/finska">Sveriges Radio Finska</a></em>Ruotsin radion meänkielinen radiokanava.</p></li>
+            <li><p><em><a href="http://websdr.ewi.utwente.nl:8901">Wide-band WebSDR in Enschede (NL)</a></em>Ensimmäinen verkossa kuunneltava lyhytaaltoradio.</p></li>
+            <li><p><em><a href="https://www.radio-osterreich.at/oe1">Ö1 live</a></em>Itävallan yleisradion ykköskanava.</p></li>
+        </ol>
+    </div>
 </body>
 </html>
